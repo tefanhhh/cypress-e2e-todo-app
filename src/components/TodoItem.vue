@@ -1,7 +1,8 @@
 <template>
-  <div class="flex justify-between pl-3 mb-4">
+  <div :data-item="name" class="flex justify-between pl-3 mb-4 todo-item">
     <span>{{ name }}</span>
     <button
+      :data-item="name"
       class="border rounded-md py-1 px-3 text-sm text-gray-700 select-none"
       @click="$emit('confirm')"
     >

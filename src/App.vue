@@ -2,24 +2,20 @@
   <div
     class="max-w-screen-sm mx-8 sm:mx-auto mt-8 border rounded-lg overflow-hidden"
   >
-    <div class="bg-green-500 px-6 py-4 text-white flex justify-between">
+    <div id="navbar" class="bg-green-500 px-6 py-4 text-white flex justify-between">
       <div>
         <router-link
           :class="`py-1 px-3 rounded-md text-white font-bold select-none ${
             route.name === R.TODO ? 'bg-green-600' : ''
           }`"
           :to="{ name: R.TODO }"
-        >
-          Todo
-        </router-link>
+        >Todo</router-link>
         <router-link
           :class="`py-1 px-3 rounded-md text-white font-bold select-none ml-4 ${
             route.name === R.DONE ? 'bg-green-600' : ''
           }`"
           :to="{ name: R.DONE }"
-        >
-          Done
-        </router-link>
+        >Done</router-link>
       </div>
       <div class="flex">
         <div v-if="todoStore.todoList.length" class="flex items-center mr-4">

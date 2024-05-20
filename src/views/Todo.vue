@@ -17,6 +17,7 @@
       @keyup.enter="addTodo(todo); todo = '';"
     />
     <button
+      id="addTodo"
       class="border rounded-none rounded-r-md px-4 border-green-600 bg-green-600 text-white select-none"
       @click="addTodo(todo); todo = '';"
     >Add</button>
